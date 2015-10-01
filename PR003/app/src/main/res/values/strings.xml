@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PR003</string>
+
+    <string name="hello_world">Nombre y Apellidos</string>
+    <string name="action_settings">Settings</string>
+    <string name="checkbox1text">Modo educado</string>
+    <string name="button1text">Mostrar resultado</string>
+</resources>
