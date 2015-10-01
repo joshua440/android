@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PR002</string>
+
+    <string name="hello_world">Bonjour le monde!</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="lblNombre">Nom</string>
+    <string name="lblApellido">Nom de famille:</string>
+    <string name="nomyape" />
+</resources>
