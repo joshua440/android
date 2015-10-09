@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PR007</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblText1Text">Cuenta</string>
+    <string name="textView2Text">Propina</string>
+    <string name="textView3Text">% Prop.</string>
+    <string name="buttonText">Redondear</string>
+    <string name="buttonText2">Limpiar</string>
+    <string name="textView5Text">Por Comensal</string>
+    <string name="textView6Text">Comensales</string>
+    <string name="button3Text">Redondear</string>
+    <string name="button4Text">Limpiar</string>
+</resources>
