@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void enviarOtra(String textToSend){
         Intent intencion=new Intent(this, Main2Activity.class);
-        intencion.putExtra(android.content.Intent.EXTRA_TEXT, textToSend);
+        intencion.putExtra(Main2Activity.INTENT_TEXT, textToSend);
 
         startActivity(intencion);
     }

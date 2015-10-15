@@ -7,7 +7,7 @@ import android.widget.TextView;
 public class Main2Activity extends AppCompatActivity {
 
     private TextView textView;
-    private final String INTENT_TEXT="";
+    public static final String INTENT_TEXT="440";
     private String text="";
 
     @Override
