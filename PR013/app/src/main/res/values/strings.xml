@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PR013</string>
+    <string name="buttonText">Enviar</string>
+    <string name="button2Text">Mostrar en otra</string>
+</resources>

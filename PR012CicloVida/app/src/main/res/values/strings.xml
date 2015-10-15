@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PR012CicloVida</string>
+    <string name="buttonText">Incrementar</string>
+    <string name="textViewText">HELLO EVERYPONY</string>
+</resources>
