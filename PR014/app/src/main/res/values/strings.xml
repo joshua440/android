@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PR014</string>
+    <string name="textView2Text">Edad</string>
+    <string name="textView5Text">DNI</string>
+    <string name="textView4Text">Nombre</string>
+    <string name="buttonText">Obtener</string>
+    <string name="button2Text">Enviar</string>
+</resources>
