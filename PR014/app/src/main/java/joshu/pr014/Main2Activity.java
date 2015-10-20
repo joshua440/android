@@ -17,6 +17,7 @@ public class Main2Activity extends AppCompatActivity {
     private EditText editText, editText2;
     private TextView textView;
     private Button button;
+    private Boolean edtx1=false, edtx2=false;
     public static final String DR_DNI="dni", DS_NAME="nombre", DS_AGE="edad";
     private String textDni="";
 
@@ -56,10 +57,11 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable s) {
                 if (TextUtils.isEmpty(editText.getText()) && TextUtils.isEmpty(editText2.getText())) {
-                    button.setEnabled(false);
+                    edtx1=false;
                 } else {
-                    button.setEnabled(true);
+                    edtx1=true;
                 }
+                editSynchro();
             }
         });
         editText2.addTextChangedListener(new TextWatcher() {
@@ -75,13 +77,22 @@ public class Main2Activity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                if (TextUtils.isEmpty(editText.getText()) && TextUtils.isEmpty(editText2.getText())){
-                    button.setEnabled(false);
+                if (TextUtils.isEmpty(editText.getText()) && TextUtils.isEmpty(editText2.getText())) {
+                    edtx2=false;
                 } else {
-                    button.setEnabled(true);
+                    edtx2=true;
                 }
+                editSynchro();
             }
         });
+    }
+
+    public void editSynchro(){
+        if (edtx1&&edtx2){
+            button.setEnabled(true);
+        } else {
+            button.setEnabled(false);
+        }
     }
 
     @Override
