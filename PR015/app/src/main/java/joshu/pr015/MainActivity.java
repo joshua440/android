@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         editText=(EditText)findViewById(R.id.editText);
         textView=(TextView)findViewById(R.id.textView3);
         textView2=(TextView)findViewById(R.id.textView);
-        textView3=(TextView)findViewById(R.id.textView11);
+        textView3=(TextView)findViewById(R.id.textView12);
         button.setEnabled(false);
 
         button.setOnClickListener(new View.OnClickListener() {

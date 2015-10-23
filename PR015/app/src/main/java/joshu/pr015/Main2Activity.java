@@ -9,12 +9,14 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
 
     private EditText editText, editText2;
     private TextView textView;
+    private Spinner spinner;
     private Button button;
     private Alumno mAlumno;
     private Boolean edtx1=false, edtx2=false;
@@ -35,6 +37,7 @@ public class Main2Activity extends AppCompatActivity {
         editText=(EditText)findViewById(R.id.editText3);
         editText2=(EditText)findViewById(R.id.editText2);
         button.setEnabled(false);
+        spinner=(Spinner)findViewById(R.id.spinner);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,6 +102,7 @@ public class Main2Activity extends AppCompatActivity {
         Intent resultado = new Intent();
         mAlumno.setNombre(editText.getText().toString());
         mAlumno.setEdad(Integer.valueOf(editText2.getText().toString()));
+        mAlumno.setSexo(getResources().getStringArray(R.array.sexo)[spinner.getSelectedItemPosition()]);
         resultado.putExtra(DS_NAME_EDAD,mAlumno);
         setResult(RESULT_OK, resultado);
         super.finish();
