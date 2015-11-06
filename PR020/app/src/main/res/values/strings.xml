@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PR020</string>
+    <string name="menuApproveTitle">Aprobar</string>
+    <string name="menuSuspendTitle">Suspender</string>
+</resources>

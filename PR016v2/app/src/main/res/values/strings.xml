@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PR016</string>
+    <string name="textViewText">Lista de Alumnos</string>
+    <string name="editTextHint">(Nombre)</string>
+    <string name="imageButtonDescription">add</string>
+    <string-array name="alumnos">
+        <item>Ivan</item>
+        <item>Joaquin</item>
+        <item>"????"</item>
+        <item>"????"</item>
+        <item>Joshua</item>
+        <item>Cristina</item>
+        <item>Pablo</item>
+        <item>Gabriel</item>
+        <item>Manuel</item>
+        <item>Alex</item>
+        <item>Ismael</item>
+    </string-array>
+</resources>

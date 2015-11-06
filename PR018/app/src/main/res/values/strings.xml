@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PR018</string>
+    <string name="textViewText">¿De que color es el caballo blanco de Santiago?</string>
+    <string name="buttonText">Comprobar</string>
+    <string name="itemTitle">Menu</string>
+</resources>
