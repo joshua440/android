@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PR021</string>
+    <string name="itemCallTitle">Llamar</string>
+    <string name="menuSendMsgTitle">Enviar mensaje</string>
+</resources>
