@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentManager gestorFragmentos= getSupportFragmentManager();
         gestorFragmentos.beginTransaction();
         FragmentTransaction transaccion=gestorFragmentos.beginTransaction();
-        transaccion.replace(R.id.f1huevo, UnoFragment.newInstance(msg));//add lo colocaria otro encima del que hubiera
+        transaccion.replace(R.id.f1hueco, UnoFragment.newInstance(msg));//add lo colocaria otro encima del que hubiera
         transaccion.commit();
     }
 }
