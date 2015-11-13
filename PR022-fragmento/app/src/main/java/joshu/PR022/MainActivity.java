@@ -7,35 +7,53 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements UnoFragment.CallBack{
 
-    Button button;
+    private Button button;
+    private String msg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        loadFragments("Friendship is Magic");
+        loadFragments("Magic",R.id.f1hueco);
         initViews();
     }
 
     private void initViews(){
+        msg="";
         button=(Button)findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
-                loadFragments("Hello everypony");
-                SecondActivity.start(MainActivity.this,"MLP");
+                if(findViewById(R.id.f2hueco)==null){
+                    loadFragments("Hello",R.id.f1hueco);
+                    SecondActivity.start(MainActivity.this,"MLP");
+                } else {
+                    loadFragments("Hello", R.id.f2hueco);
+                }
+
             }
         });
     }
 
-    private void loadFragments(String msg) {
+    private void loadFragments(String msg, int id) {
         FragmentManager gestorFragmentos= getSupportFragmentManager();
         gestorFragmentos.beginTransaction();
         FragmentTransaction transaccion=gestorFragmentos.beginTransaction();
-        transaccion.replace(R.id.f1hueco, UnoFragment.newInstance(msg));//add lo colocaria otro encima del que hubiera
+        transaccion.replace(id, UnoFragment.newInstance(msg));//add lo colocaria otro encima del que hubiera
         transaccion.commit();
+    }
+
+    @Override
+    public void pulsado(String msg) {
+        this.msg=msg;
+        if(findViewById(R.id.f2hueco)==null){
+            loadFragments(msg,R.id.f1hueco);
+            SecondActivity.start(MainActivity.this,msg);
+        } else {
+            loadFragments(msg, R.id.f2hueco);
+        }
     }
 }

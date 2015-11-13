@@ -10,7 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 /**
  * Created by joshu on 12/11/2015.
  */
-public class SecondActivity extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity implements UnoFragment.CallBack {
 
     public static final String KEY_MSG="sdmsg";
 
@@ -34,5 +34,10 @@ public class SecondActivity extends AppCompatActivity {
         FragmentTransaction transaccion=gestorFragmentos.beginTransaction();
         transaccion.replace(R.id.f2hueco, UnoFragment.newInstance(msg));//add lo colocaria otro encima del que hubiera
         transaccion.commit();
+    }
+
+    @Override
+    public void pulsado(String msg) {
+
     }
 }
