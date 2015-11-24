@@ -4,6 +4,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -18,6 +21,23 @@ public class MainActivity extends AppCompatActivity implements UnoFragment.CallB
         setContentView(R.layout.activity_main);
         loadFragments("Magic",R.id.f1hueco);
         initViews();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflator = getMenuInflater();
+        inflator.inflate(R.menu.mainactivitymenu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menuMain:
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     private void initViews(){

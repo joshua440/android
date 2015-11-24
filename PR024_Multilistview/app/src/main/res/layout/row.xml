@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="6dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp"
+        android:background="@drawable/mainactivitiybackgrounditemselected">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="start"
+            android:textSize="20sp"
+            android:layout_height="40dp"
+            android:text="Call"
+            android:id="@+id/name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:gravity="start"
+            android:layout_below="@+id/name"
+            android:text="Call"
+            android:layout_height="40dp"
+            android:id="@+id/age"/>
+        <Button
+            android:text="Call"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/callButton"
+            android:layout_alignTop="@+id/age"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
