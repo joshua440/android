@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imageView"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/nameTextView"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/telefonoTextView"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/nameTextView"
+                android:layout_alignLeft="@+id/nameTextView"
+                android:layout_alignStart="@+id/nameTextView" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/ageTextView"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/telefonoTextView"
+                android:layout_alignLeft="@+id/telefonoTextView"
+                android:layout_alignStart="@+id/telefonoTextView"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/cityTextView"
+                android:layout_marginTop="40dp"
+                android:layout_centerVertical="true"
+                android:layout_below="@id/ageTextView"
+                android:layout_alignLeft="@+id/ageTextView"
+                android:layout_alignStart="@+id/ageTextView"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/emailTextView"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="40dp"
+                android:layout_below="@id/cityTextView"
+                android:layout_alignLeft="@+id/cityTextView"
+                android:layout_alignStart="@+id/cityTextView" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

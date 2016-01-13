@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mis Libros Favoritos</string>
+    <string name="error_creation_book">Rellene todos los campos para poder crear el libro</string>
+</resources>

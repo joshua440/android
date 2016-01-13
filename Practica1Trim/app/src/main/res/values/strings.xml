@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Practica1Trim</string>
+    <string name="list_fragment_title">Lista de contactos</string>
+    <string name="detail_fragment_title">Detalles</string>
+</resources>

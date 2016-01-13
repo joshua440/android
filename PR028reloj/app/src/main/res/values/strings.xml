@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PR028reloj</string>
+    <string name="buttonStopText">Parar</string>
+    <string name="buttonContinueText">Iniciar</string>
+</resources>
